@@ -4,13 +4,13 @@ import plotly.express as px
 ##
 ## streamlit run c:/_Apps/UDEMY/BuildAndDeployStreamlitDataProducts/PublishScript/TitanicDashboard.py
 ##
-## Titanic Dashboard - Publisdhable Streamlit App 1111
+## Titanic Dashboard - Publisdhable Streamlit App 11111
 ##
 st.set_page_config(layout='wide')
 st.title('Titanic Dashboard')
 
 ## Load DataFrame: PassengerId,Survived,Pclass,Name,Sex,Age,SibSp,Parch,Ticket,Fare,Cabin,Embarked
-df = pd.read_csv('C:\\_Apps\\UDEMY\\BuildAndDeployStreamlitDataProducts\\DataFiles\\titanic.csv')
+df = pd.read_csv('C:/_Apps/UDEMY/BuildAndDeployStreamlitDataProducts/DataFiles/titanic.csv')
 ##
 port_list = df['Embarked'].unique()                           ## Build Port List 
 gender_list = df['Sex'].unique()                              ## Build Gender List 
