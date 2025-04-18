@@ -10,7 +10,7 @@ st.set_page_config(layout='wide')
 st.title('Titanic Dashboard')
 
 ## Load DataFrame: PassengerId,Survived,Pclass,Name,Sex,Age,SibSp,Parch,Ticket,Fare,Cabin,Embarked
-df = pd.read_csv('C:/_Apps/UDEMY/BuildAndDeployStreamlitDataProducts/DataFiles/titanic.csv')
+df = pd.read_csv('titanic.csv')
 ##
 port_list = df['Embarked'].unique()                           ## Build Port List 
 gender_list = df['Sex'].unique()                              ## Build Gender List 
